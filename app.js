@@ -62,7 +62,9 @@
     if(!LIVE){state.loading=false;state.data=loadDemo();render();return}
     try{
       const mod=await import('https://esm.sh/@supabase/supabase-js@2');
-      supabase=mod.createClient(config.supabaseUrl,config.supabasePublishableKey);
+      
+supabase=mod.createClient(config.supabaseUrl,config.supabasePublishableKey,{db:{schema:'sas_basketball'}});
+
       const {data:{session},error}=await supabase.auth.getSession(); if(error)throw error;
       if(session)await loadUser(session.user.id); else{state.loading=false;render()}
       supabase.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'){state.profile=null;state.role=null;state.authScreen='entry';state.loading=false;render()}});
