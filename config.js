@@ -2,6 +2,6 @@
 // For live deployment use your Supabase project's public URL and PUBLISHABLE key.
 // Never put a Supabase secret/service_role key in this file.
 window.SAS_CONFIG = {
-  supabaseUrl: '',
-  supabasePublishableKey: ''
+  supabaseUrl: 'https://wkuivvjkbpvntjqmcddu.supabase.co',
+  supabasePublishableKey: 'sb_publishable_d4LVP6wcVzfFZ_zsHHtGHg_qelbgPNC'
 };
