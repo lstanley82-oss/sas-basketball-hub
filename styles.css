@@ -14,3 +14,9 @@
 @media(max-width:650px){.entry{padding:18px}.entry-inner{grid-template-columns:1fr;gap:20px;max-width:480px}.entry-brand{padding:5px 0 0;text-align:center}.entry-brand img.eagle{height:69px}.entry-brand .schoolname{font-size:9px;margin-top:5px}.entry-brand .massive{font-size:62px;margin:13px 0 5px}.entry-brand .strap{margin:14px 0 0;font-size:12px}.entry-brand .substrap{display:none}.entry-panel{padding:18px}.entry-link{padding:11px}.entry-link .entry-icon{width:39px;height:39px;flex-basis:39px}.entry-link .entry-title{font-size:14px}.grid2,.grid3,.grid4{grid-template-columns:1fr}.grid4.stat-grid{grid-template-columns:repeat(2,1fr)}.pagehead{align-items:flex-start}.pagehead h1{font-size:37px}.pagehead>.btn{font-size:11px;padding:9px}.hero{min-height:194px;padding:23px}.hero h2{font-size:38px}.hero .hero-logo{width:140px;right:2px;top:24px}.form-grid{grid-template-columns:1fr}.controlbar{align-items:stretch;flex-direction:column}.controlbar .search{max-width:none}.card{padding:16px}.top-title{font-size:19px}.topbar .top-right .role{display:none}}
 @media(max-width:800px){.topbar .top-title{display:none}.topbar .top-right img{display:none}}
 @media(max-width:420px){.topbar .mobilebar strong{font-size:18px}.topbar .top-right .pill{font-size:9px;padding:5px 7px}.topbar{gap:6px}.mobilebar{min-width:0}}
+
+/* v0.4 team workspace and secondary tools */
+.v04-switcher{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:22px;padding:15px 20px;border:1px solid #e1e3e7;border-radius:15px;background:#fff}
+.v04-buttons{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.v04-switcher .btn{min-width:80px}
+@media(max-width:740px){.v04-switcher{padding:12px;margin-bottom:16px}.v04-buttons{width:100%}.v04-buttons .btn{flex:1}.sidebar{overflow-y:auto}.content{padding-bottom:76px}}
