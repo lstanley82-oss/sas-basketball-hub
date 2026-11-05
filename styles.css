@@ -37,3 +37,8 @@
 .priority-other-input{width:100%;box-sizing:border-box;border:1px solid #d4d8df;border-radius:9px;padding:11px 12px;background:#fff}
 .priority-other-input[hidden]{display:none!important}
 .priority-other-input:focus{outline:2px solid #c51c23;outline-offset:1px}
+
+/* v0.4.2 cleanup actions: visually distinguished permanent deletion */
+.btn.dangerbtn{background:#fff2f3;border:1px solid #edb2b6;color:#a7151e;font-weight:800;}
+.btn.dangerbtn:hover{background:#ffe4e5;border-color:#ca2932;color:#831017;}
+.btn.dangerbtn:focus-visible{outline:3px solid #b82029;outline-offset:2px;}
