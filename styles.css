@@ -31,3 +31,9 @@
 .v041-player-picks .choice{padding:5px 0}
 .v041-recurring-option{padding:12px;margin:8px 0;background:#fafbfc;border-radius:9px}
 @media(max-width:740px){.mobile-nav{display:flex;overflow-x:auto;scrollbar-width:thin}.mobile-nav button{min-width:62px;flex:1 0 auto}.v041-checkin-benchmark{padding:12px}}
+
+/* v0.4.1a | Custom instructional priorities, responsive, no database changes */
+.priority-select-wrap{display:grid;gap:8px;min-width:0}
+.priority-other-input{width:100%;box-sizing:border-box;border:1px solid #d4d8df;border-radius:9px;padding:11px 12px;background:#fff}
+.priority-other-input[hidden]{display:none!important}
+.priority-other-input:focus{outline:2px solid #c51c23;outline-offset:1px}
