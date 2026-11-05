@@ -20,3 +20,14 @@
 .v04-buttons{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
 .v04-switcher .btn{min-width:80px}
 @media(max-width:740px){.v04-switcher{padding:12px;margin-bottom:16px}.v04-buttons{width:100%}.v04-buttons .btn{flex:1}.sidebar{overflow-y:auto}.content{padding-bottom:76px}}
+
+/* v0.4.1 | Recurring benchmark history and shared observations */
+.v041-trend{border:1px solid #e2e4e9;border-radius:12px;padding:12px 14px;margin:15px 0;background:#fafafb}
+.v041-trend svg{display:block;width:100%;height:120px;margin:8px 0 0}
+.v041-trend .row small{font-size:10px;color:#727984}
+.v041-checkin-benchmark{border:1px solid #e4e6eb;border-left:3px solid #c61d27;border-radius:12px;padding:17px;margin:13px 0;background:#fcfcfd;display:grid;gap:13px}
+.v041-checkin-benchmark .field{margin:0}
+.v041-player-picks{max-height:170px;overflow-y:auto;border:1px solid #e5e6e9;padding:9px;border-radius:10px;background:#fafbfc}
+.v041-player-picks .choice{padding:5px 0}
+.v041-recurring-option{padding:12px;margin:8px 0;background:#fafbfc;border-radius:9px}
+@media(max-width:740px){.mobile-nav{display:flex;overflow-x:auto;scrollbar-width:thin}.mobile-nav button{min-width:62px;flex:1 0 auto}.v041-checkin-benchmark{padding:12px}}
