@@ -164,3 +164,45 @@
   .v044-table {font-size:11px;}
   .v044-table td,.v044-table th {padding:9px 8px;}
 }
+
+/* v0.4.5 | Game Day image/video media + assignment instructional/evidence files */
+.v045-featured-poster { position:relative; display:flex; align-items:center; justify-content:center; width:100%; min-height:150px; max-height:380px; margin-bottom:16px; overflow:hidden; border-radius:13px; background:#171c24; color:#e7eaf0; }
+.v045-featured-poster img { width:100%; max-height:380px; object-fit:contain; display:block; }
+.v045-featured-poster .v045-image-status { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:12px; color:#cbd2dd; }
+.v045-featured-poster img:not([hidden]) + .v045-image-status { display:none; }
+.v045-media-gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:10px; margin:15px 0 8px; }
+.v045-image-tile { background:#f6f7f9; border:1px solid #e6e9ee; border-radius:12px; padding:8px; overflow:hidden; min-width:0; }
+.v045-image-tile .subtle {font-size:11px; margin:8px 0 7px; overflow-wrap:anywhere;}
+.v045-image-frame { height:132px; border-radius:8px; background:#181c25; color:#fff; display:flex; justify-content:center; align-items:center; overflow:hidden; }
+.v045-image-frame img { display:block; width:100%; height:100%; object-fit:contain; }
+.v045-image-frame img[hidden], .v045-attachment-preview img[hidden],.v045-featured-poster img[hidden] {display:none!important}
+.v045-image-status {font-size:11px; text-align:center; padding:12px; color:#858c98;}
+.v045-image-frame .v045-image-status {color:#d8dbe0;}
+.v045-media-link { display:flex; align-items:center; padding:12px; border:1px solid #dfe2e7; background:#fff; color:#ac1522; border-radius:10px; font-size:12px; line-height:1.5; font-weight:750; overflow-wrap:anywhere; min-height:45px; text-decoration:none; }
+.v045-media-link:hover { border-color:#c51e2a; background:#fff7f8; }
+.v045-attachment-list {display:flex; flex-direction:column; gap:9px; margin:8px 0 14px;}
+.v045-attachment-item { display:flex; align-items:flex-start; flex-wrap:wrap; gap:7px; padding:8px; border-radius:11px; background:#f7f8fa; border:1px solid #e5e8ec; }
+.v045-attachment-item .v045-attachment-row {flex:1 1 240px;}
+.v045-attachment-row {display:flex; align-items:center; gap:11px; min-width:0;}
+.v045-attachment-row .btn{ flex-shrink:0; }
+.v045-file-mark { display:flex; flex:0 0 40px; width:40px; height:40px; border-radius:9px; background:#f9eaec; color:#ba1d2d; align-items:center; justify-content:center; font-size:23px; font-weight:850; }
+.v045-attachment-preview { display:flex; flex:0 0 74px; width:74px; height:61px; background:#19202a; border-radius:7px; align-items:center; justify-content:center; overflow:hidden; }
+.v045-attachment-preview img {width:100%;height:100%;object-fit:contain;}
+.v045-attachment-preview .v045-image-status {font-size:10px; color:#fff; padding:4px;}
+.v045-attachment-details { flex:1; min-width:0; display:flex; flex-direction:column; gap:3px; }
+.v045-attachment-details strong {font-size:12px; word-break:break-word; }
+.v045-attachment-details .subtle { font-size:11px; overflow-wrap:anywhere; }
+.v045-attachment-count {color:#b21d2c; font-size:12px; font-weight:750; margin:7px 0;}
+@media (max-width:700px){
+ .v045-featured-poster { max-height:260px; min-height:120px; }
+ .v045-featured-poster img{max-height:260px;}
+ .v045-media-gallery{grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px;}
+ .v045-image-frame{height:105px;}
+ .v045-attachment-row{gap:8px;}
+ .v045-attachment-row .btn {padding:7px;min-height:40px;}
+ .v045-attachment-details strong{font-size:11px;}
+}
+
+/* v0.4.5 multi-day tournament builder and compact published itinerary */
+.v045-tournament-grid{display:grid;gap:13px;margin-top:12px}.v045-tournament-card{display:grid;gap:11px}.v045-tournament-card h3{font-size:26px}.v045-tour-days{display:grid;gap:8px}.v045-tour-day{display:grid;grid-template-columns:155px minmax(0,1fr);gap:10px;background:#f8f9fa;border:1px solid #e7e8eb;padding:11px;border-radius:11px}.v045-tour-date{font-weight:900;font-size:12px;color:#23252a}.v045-tour-dayitems{display:grid;gap:9px}.v045-tour-line{display:flex;gap:11px;align-items:flex-start;padding-bottom:9px;border-bottom:1px solid #e8e9ec}.v045-tour-line:last-child{padding-bottom:0;border:0}.v045-tour-kind{display:inline-block;border-radius:6px;padding:5px 7px;font-size:9px;font-weight:900;background:#edeff2;color:#4d535d;flex:0 0 65px;text-align:center}.v045-tour-kind.game{background:#fbe5e7;color:#b51a24}.v045-tour-kind.travel{background:#e5edf8;color:#305f99}.v045-tour-info{min-width:0;display:grid;gap:5px;flex:1}.v045-tour-info b{font-size:12px}.v045-tour-info small{font-size:11px;color:#6d737e}.v045-tour-info .row{margin-top:4px}.v045-tour-score{font-weight:800;color:#a31620!important}.v045-tour-media{max-width:470px}.v045-tournament-modal{width:min(100%,750px)}.v045-tournament-items{display:grid;gap:9px}.v045-tournament-item{padding:12px;background:#f8f9fa;border:1px solid #e0e3e7;border-radius:12px;display:grid;gap:10px}.v045-tournament-next{font-size:11px;font-weight:800;color:#b71d25;margin-bottom:7px}
+@media(max-width:600px){.v045-tour-day{grid-template-columns:1fr;gap:8px}.v045-tour-date{font-size:13px}.v045-tour-line{gap:6px}.v045-tour-kind{flex-basis:57px}.v045-tournament-card .btn{white-space:normal}}
