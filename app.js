@@ -1,4 +1,4 @@
-/* SAS Basketball v0.4.5 | Game media, assignment evidence, and multi-day tournament itineraries. */
+/* SAS Basketball v0.4.5.1 | Hotfix: initialize upload file index for game and assignment media. */
 (() => {
   'use strict';
   const ROOT = document.getElementById('app');
@@ -441,6 +441,7 @@
     if(!files.length)return;
     if(!LIVE)throw Error('Uploading local files requires the live app. Links work in the demo.');
     sanitizeMediaFiles(files,types,maxBytes,5);
+    let fileIndex=0;
     for(const file of files){
       const ext=file.name.split('.').pop().toLowerCase();const name=file.name.replace(/[^A-Za-z0-9._-]/g,'_').slice(-90);
       const path=bucket===GAME_MEDIA_BUCKET?`${foreignId}/${id()}-${name}`:`${ownerId?'players/'+ownerId:'coaches'}/${foreignId}/${id()}-${name}`;
